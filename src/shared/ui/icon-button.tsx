@@ -17,7 +17,7 @@ export const IconButton = ({
 	<button
 		aria-label={ariaLabel}
 		className={cn(
-			"flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground",
+			"flex size-8 cursor-pointer items-center justify-center rounded-[6px] text-muted-foreground transition-colors hover:bg-white/7",
 			className
 		)}
 		onClick={onClick}

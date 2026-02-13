@@ -1,5 +1,4 @@
 // Side-effect imports: register all feature panels before rendering
-import "@/elements/heading/panels";
 import "@/elements/tagline/panels";
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";

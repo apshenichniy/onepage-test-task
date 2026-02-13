@@ -49,7 +49,7 @@ export const TaglineMainPanel = observer(function TaglineMainPanel() {
 			<PanelHeader onClose={() => panelNavigation.close()} title="Tagline" />
 
 			<div className="min-h-0 flex-1 overflow-y-auto">
-				<div className="m-3.5 flex flex-col">
+				<div className="m-3.5 flex flex-col gap-y-1">
 					<DndContext
 						collisionDetection={closestCenter}
 						onDragEnd={handleDragEnd}
@@ -74,11 +74,8 @@ export const TaglineMainPanel = observer(function TaglineMainPanel() {
 							))}
 						</SortableContext>
 					</DndContext>
-				</div>
-
-				<div className="p-4">
 					<button
-						className="group flex cursor-pointer items-center gap-2 font-medium text-muted-foreground text-sm transition-colors hover:text-foreground/80"
+						className="group flex items-center gap-2 rounded-sm py-1 font-normal text-sm text-white/45 leading-[140%] transition-colors hover:bg-white/7"
 						onClick={() => panelNavigation.push({ type: "tagline-item" })}
 						type="button"
 					>

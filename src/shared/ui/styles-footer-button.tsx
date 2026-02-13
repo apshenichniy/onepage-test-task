@@ -6,15 +6,15 @@ interface StylesFooterButtonProps
 export function StylesFooterButton({ onClick }: StylesFooterButtonProps) {
 	return (
 		<button
-			className="group flex h-12 w-full shrink-0 cursor-pointer items-center justify-between border-border border-t px-3.5 text-sm transition-colors hover:text-foreground/80"
+			className="group flex h-12 w-full shrink-0 cursor-pointer items-center justify-between border-border border-t px-3.5 text-sm"
 			onClick={onClick}
 			type="button"
 		>
-			<span className="flex items-center gap-3 font-medium group-hover:text-foreground/80">
-				<Style className="text-muted-foreground group-hover:text-foreground/80" />
+			<span className="flex items-center gap-3 font-medium">
+				<Style />
 				Styles
 			</span>
-			<ArrowRight className="text-muted-foreground group-hover:text-foreground/80" />
+			<ArrowRight />
 		</button>
 	);
 }

@@ -99,7 +99,7 @@ export const EditorSidebar = observer(function EditorSidebar() {
 		>
 			<div
 				className={cn(
-					"w-70 overflow-hidden rounded-2xl",
+					"w-70 overflow-hidden rounded-xl",
 					"bg-panel shadow-panel backdrop-blur-panel",
 					closing
 						? "fade-out zoom-out-96 animate-out fill-mode-forwards duration-150"

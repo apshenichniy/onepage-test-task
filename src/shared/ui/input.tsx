@@ -14,21 +14,20 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 export const Input = ({
 	label,
 	classNames,
-	className,
 	ref,
 	...props
 }: InputProps): ReactNode => {
 	return (
 		<label
 			className={cn(
-				"block rounded-sm border border-border bg-[#FFFFFF12] px-3 py-2",
+				"flex h-11.75 flex-col gap-1 rounded-sm border border-border bg-white/7 px-3 pt-2",
 				classNames?.container
 			)}
 		>
 			{label && (
 				<span
 					className={cn(
-						"block font-medium text-muted-foreground text-sm",
+						"inline-flex h-2 items-center overflow-clip font-medium text-white/65 text-xs leading-none",
 						classNames?.label
 					)}
 				>
@@ -37,9 +36,8 @@ export const Input = ({
 			)}
 			<input
 				className={cn(
-					"w-full rounded-sm bg-transparent text-sm outline-none placeholder:text-muted-foreground/50",
-					classNames?.input,
-					className
+					"w-full text-sm outline-none placeholder:text-muted-foreground/50",
+					classNames?.input
 				)}
 				ref={ref}
 				{...props}

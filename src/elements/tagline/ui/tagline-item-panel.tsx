@@ -82,7 +82,7 @@ export const TaglineItemPanel = observer(function TaglineItemPanel({
 		<div className="flex flex-col bg-panel">
 			<PanelHeader onBack={handleBack} onClose={handleClose} title="Item" />
 
-			<div className="flex min-h-0 flex-1 flex-col gap-2 overflow-y-auto p-4">
+			<div className="flex flex-1 flex-col gap-2 px-3.5 py-3">
 				<Input
 					label="Label"
 					onChange={(e) => handleLabelChange(e.target.value)}

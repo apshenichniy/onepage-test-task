@@ -2,10 +2,10 @@ import { cva } from "class-variance-authority";
 import type { TagStyleVariant } from "../types";
 
 export const variantStyles: Record<TagStyleVariant, string> = {
-	filled: "bg-accent text-foreground",
+	filled: "bg-white/10 text-foreground",
 	soft: "bg-brand/20 text-brand-foreground",
 	solid: "bg-brand/93 text-foreground",
-	outlined: "border border-border text-foreground",
+	outlined: "border border-white/25 text-foreground",
 };
 
 export const tagChipVariants = cva(

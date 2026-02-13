@@ -46,10 +46,8 @@ export const TaglineStylesPanel = observer(function TaglineStylesPanel() {
 							<button
 								aria-label={`${value} variant`}
 								className={cn(
-									"flex h-9 flex-1 cursor-pointer items-center justify-center rounded-sm text-sm transition-colors",
-									style,
-									tagline.styles.variant === value &&
-										"ring-2 ring-brand ring-offset-2 ring-offset-background"
+									"flex h-9.25 flex-1 items-center justify-center rounded-sm font-medium text-sm leading-[140%] tracking-[-0.002em] transition-colors",
+									style
 								)}
 								key={value}
 								onClick={() => tagline.setVariant(value)}

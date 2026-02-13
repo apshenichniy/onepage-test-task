@@ -21,16 +21,17 @@ export const ElementPreview = ({
 	return (
 		// biome-ignore lint/a11y/useSemanticElements: <button> cannot be used due to nested interactive content (links)
 		<div
-			className="group w-full cursor-pointer rounded-xl p-6 text-left"
+			className="group flex w-full cursor-pointer flex-col items-center rounded-xl p-6"
 			onClick={onClick}
 			onKeyDown={handleKeyDown}
 			role="button"
 			tabIndex={0}
 		>
-			<div className="mb-2 font-medium text-muted-foreground text-xs">
+			<div className="mb-20 pt-30 text-center font-medium text-[38px]">
 				{label}
 			</div>
-			{children}
+
+			<div className="w-100">{children}</div>
 		</div>
 	);
 };

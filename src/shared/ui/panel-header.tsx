@@ -18,7 +18,7 @@ export const PanelHeader = ({
 	const dragHandleProps = useDragHandle();
 
 	return (
-		<div className="relative flex h-14 shrink-0 items-center border-border border-b px-4">
+		<div className="relative flex h-14 shrink-0 items-center border-border border-b px-2">
 			<DragHandle
 				className="absolute inset-x-0 top-0 justify-center pt-1"
 				variant="horizontal"
@@ -27,7 +27,7 @@ export const PanelHeader = ({
 			<div className="w-8">
 				{onBack && (
 					<IconButton onClick={onBack}>
-						<ArrowLeft className="size-4" />
+						<ArrowLeft />
 					</IconButton>
 				)}
 			</div>
